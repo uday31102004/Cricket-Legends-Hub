@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Zone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fan Zone</h1>
+    </header>
+    <section id="fan-zone">
+        <p>Share your favorite player stories or vote for the greatest players of all time!</p>
+        <form action="submit-story" method="post">
+            <textarea name="story" placeholder="Your story here..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="vote-section">
+            <h3>Vote for the Greatest Players</h3>
+            <ul>
+                <li><button onclick="vote('Sachin Tendulkar')">Sachin Tendulkar</button></li>
+                <li><button onclick="vote('Vivian Richards')">Vivian Richards</button></li>
+                <li><button onclick="vote('Sir Don Bradman')">Sir Don Bradman</button></li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        function vote(player) {
+            alert(`You voted for ${player}`);
+            // Add voting logic here
+        }
+    </script>
+</body>
+</html>
